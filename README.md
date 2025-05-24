@@ -2,6 +2,15 @@
 
 This Python script decodes monoalphabetic substitution ciphers by analyzing letter frequencies and using OpenAI's GPT-4o-mini model to perform the decryption.
 
+This is an ongoing project and is a WIP. This project is not always accurate gives questionable responses at times, I'll explain why. 
+Comparing this to my ROT chiper with GPT, there's a lot more uncertianty about your decryption. For ROTs, you just do the 25 variations and pick the best. For frequency analysis, you really have to do a lot of guess and check. You may be given a sentence that doesn't have the letter 'e', and that will throw off everything. 
+That being said, this script relies heavily on GPT and how well it will do on your execution. I've gotten varying results, with GPT getting pretty darn close one time, but giving me pure BS it thought of other times. One example that did work was this one from my cryptography textbook:
+JGRMQOYGHMVBJWRWQFPWHGFFDQGFPFZRKBEEBJIZQQOCIBZKLFAFGQVFZFWWE
+OGWOPFGFHWOLPHLRLOLFDMFGQWBLWBWQOLKFWBYLBLYLFSFLJGRMQBOLWJVFP
+FWQVHQWFFPQOQVFPQOCFPOGFWFJIGFQVHLHLROQVFGWJVFPFOLFHGQVQVFILE
+OGQILHQFQGIQVVOSFAFGBWQVHQWIJVWJVFPFWHGFIWIHZZRQGBABHZQOCGFHX
+In the future, I may have the program rely less on Chat GPTs analysis, and have multiple subsitutions done in advance before shipping it off to GPT for it's input.
+
 ## Features
 - Analyzes letter frequencies in the encrypted text
 - Calculates precise percentage distribution for each letter
